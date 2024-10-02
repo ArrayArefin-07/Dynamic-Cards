@@ -54,19 +54,24 @@
 // using axios
 // console.log(axios);
 //fetch data
-const fetchData = async () => {
-  const res = await axios("https://jsonplaceholder.typicode.com/posts");
-  console.log(res.data);
+const fetchData = async (config) => {
+  try {
+    const res = await axios(config);
+    return res.data;
+  } catch (error) {
+    throw Error("Data is not fatched propery");
+  }
 };
 
-fetchData();
+
 
 // selection
 
 // show data using array
 const postsElement = document.querySelector(".posts");
 
-const loadAllData = () => {
+const loadAllData = async () => {
+  const posts = await fetchData("https://jsonplaceholder.typicode.com/posts");
   posts.map((post) => {
     // console.log(post);
     const postElement = document.createElement("div");
@@ -79,4 +84,4 @@ const loadAllData = () => {
   });
 };
 
-// loadAllData();
+loadAllData();
