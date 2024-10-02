@@ -29,6 +29,18 @@ const posts = [
     title: "this is title-7",
     body: "this is body-7",
   },
+  {
+    title: "this is title-8",
+    body: "this is body-8",
+  },
+  {
+    title: "this is title-9",
+    body: "this is body-9",
+  },
+  {
+    title: "this is title-10",
+    body: "this is body-10",
+  },
 ];
 
 {
