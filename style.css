@@ -1,6 +1,6 @@
 /* reset code starts */
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ h1 {
 
 /* post starts here */
 
-.posts{
+.posts {
   width: 100%;
   /* background-color: aqua; */
   padding: 1rem;
@@ -26,13 +26,13 @@ h1 {
 .post {
   width: 23%;
   margin: 0.1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, .0, .0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
   transition: all 0.4s;
 }
 
 .post:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, .0, .0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* post ends here */
