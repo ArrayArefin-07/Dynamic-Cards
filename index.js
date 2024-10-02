@@ -48,8 +48,8 @@ const loadAllData = () => {
     const postElement = document.createElement("div");
     postElement.classList.add("post");
     postElement.innerHTML = `
-    <h4 class="post-title">post title 1</h4>
-    <p class="post-body">post description 1</p>
+    <h4 class="post-title">${post.title}</h4>
+    <p class="post-body">${post.body}</p>
     `;
     postsElement.appendChild(postElement)
   });
